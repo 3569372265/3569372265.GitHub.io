@@ -3,7 +3,7 @@
     <id>https://3569372265.GitHub.io</id>
     <title>KuChen</title>
     <link href="https://3569372265.GitHub.io" />
-    <updated>2023-10-25T15:34:57.437Z</updated>
+    <updated>2023-10-25T15:49:29.348Z</updated>
     <entry>
         <id>https://3569372265.github.io/hello-template/</id>
         <title>Hexo Template</title>
@@ -59,7 +59,7 @@
 &lt;p&gt;Follows &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhv&#34;&gt;hexojs/hexo&lt;/span&gt; , use &lt;a href=&#34;LICENSE&#34;&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://app.fossa.com/projects/git%2Bgithub.com%2Fhexojs%2Fhexo?ref=badge_large&#34;&gt;&lt;img data-src=&#34;https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhexojs%2Fhexo.svg?type=large&#34; alt=&#34;FOSSA Status&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
-        <updated>2023-10-25T15:34:57.437Z</updated>
+        <updated>2023-10-25T15:49:29.348Z</updated>
     </entry>
     <entry>
         <id>https://3569372265.github.io/css/app/</id>
@@ -5364,14 +5364,14 @@ span.label {
   animation-play-state: running;
 }
 </content>
-        <updated>2023-10-25T15:34:57.437Z</updated>
+        <updated>2023-10-25T15:49:29.348Z</updated>
     </entry>
     <entry>
         <id>https://3569372265.github.io/css/comment/</id>
         <title></title>
         <link rel="alternate" href="https://3569372265.github.io/css/comment/"/>
         <content type="html"></content>
-        <updated>2023-10-25T15:34:57.437Z</updated>
+        <updated>2023-10-25T15:49:29.348Z</updated>
     </entry>
     <entry>
         <id>https://3569372265.github.io/css/mermaid/</id>
@@ -5914,7 +5914,7 @@ pre.graphviz svg &gt; g &gt; polygon {
   --mermaid-font-family: &#34;trebuchet ms&#34;, verdana, arial;
 }
 </content>
-        <updated>2023-10-25T15:34:57.437Z</updated>
+        <updated>2023-10-25T15:49:29.348Z</updated>
     </entry>
     <entry>
         <id>https://3569372265.github.io/css/optimize/</id>
@@ -5929,7 +5929,7 @@ pre.graphviz svg &gt; g &gt; polygon {
   contain-intrinsic-size: auto 1em;
 }
 </content>
-        <updated>2023-10-25T15:34:57.437Z</updated>
+        <updated>2023-10-25T15:49:29.348Z</updated>
     </entry>
     <entry>
         <id>https://3569372265.github.io/css/twikoo/</id>
@@ -7871,6 +7871,6 @@ pre.graphviz svg &gt; g &gt; polygon {
 }
 
 </content>
-        <updated>2023-10-25T15:34:57.437Z</updated>
+        <updated>2023-10-25T15:49:29.348Z</updated>
     </entry>
 </feed>

@@ -1,0 +1,572 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="KuChen" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="KuChen" type="application/atom+xml"><link rel="alternate" type="application/json" title="KuChen" href="https://3569372265.github.io/feed.json"/><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="dns-prefetch" href="https://unpkg.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.3.6"><script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.js"></script><link rel="canonical" href="https://3569372265.github.io/css/mermaid/"><title></title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline"></h1><div class="meta"><span class="item" title="Created: 2023-10-25 15:49:29"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2023-10-25T15:49:29+00:00">2023-10-25</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>103</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>1 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">testName</a></li></ul><ul class="right" id="rightNav"><li class="item theme" @click="changeThemeByBtn"><i class="ic" :class="{'i-sun': !themeStatus,'i-moon': themeStatus}"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="en"><link itemprop="mainEntityOfPage" href="https://3569372265.github.io/css/mermaid/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="KuChen"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="KuChen"/></span><div class="body md" itemprop="articleBody">pre.mermaid,
+pre.graphviz {
+  background: none;
+  padding: 0;
+  border: none;
+}
+pre > svg {
+  display: block;
+  margin: 0 auto;
+}
+pre.graphviz {
+  white-space: normal;
+  max-width: calc(100% - 3.125rem);
+}
+pre.graphviz svg > g > polygon {
+  fill: var(--grey-1);
+}
+.mermaid.graph svg {
+  max-height: 18.75rem;
+}
+.mermaid .label {
+  font-family: var(--mermaid-font-family);
+  color: var(--grey-7);
+  font-size: 0.875em;
+}
+.mermaid .label text {
+  fill: var(--text-color);
+}
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path {
+  fill: var(--grey-1);
+  stroke: var(--text-color);
+  stroke-width: 0.0625rem;
+}
+.mermaid .node .label {
+  text-align: center;
+}
+.mermaid .node.clickable {
+  cursor: pointer;
+}
+.mermaid .arrowheadPath {
+  fill: var(--text-color);
+}
+.mermaid .edgePath .path {
+  stroke: var(--text-color);
+}
+.mermaid .flowchart-link {
+  stroke: var(--text-color);
+  fill: none;
+}
+.mermaid .edgeLabel {
+  background-color: var(--grey-2);
+  text-align: center;
+}
+.mermaid .edgeLabel rect {
+  opacity: 0.8;
+  fill: var(--grey-2) !important;
+}
+.mermaid .cluster rect {
+  fill: var(--grey-2);
+  stroke: var(--text-color);
+  stroke-width: 0.0625rem;
+}
+.mermaid .cluster text {
+  fill: var(--text-color);
+}
+.mermaid div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 12.5rem;
+  padding: 0.125rem;
+  font-family: var(--mermaid-font-family);
+  font-size: 0.75rem;
+  background: var(--grey-1);
+  border: 0.0625rem solid var(--text-color);
+  border-radius: 0.125rem;
+  pointer-events: none;
+  z-index: 99;
+}
+.mermaid .actor {
+  stroke: var(--text-color);
+  fill: var(--grey-1);
+}
+.mermaid text.actor {
+  fill: var(--text-color);
+  stroke: none;
+}
+.mermaid .actor-line {
+  stroke: var(--text-color);
+}
+.mermaid .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: var(--text-color);
+}
+.mermaid .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: var(--text-color);
+}
+.mermaid #arrowhead {
+  fill: var(--text-color);
+}
+.mermaid .sequenceNumber {
+  fill: #fff;
+}
+.mermaid #sequencenumber {
+  fill: var(--text-color);
+}
+.mermaid #crosshead path {
+  fill: var(--text-color) !important;
+  stroke: var(--text-color) !important;
+}
+.mermaid .messageText {
+  fill: var(--text-color);
+  stroke: none;
+}
+.mermaid .labelBox {
+  stroke: var(--text-color);
+  fill: var(--grey-3);
+}
+.mermaid .labelText {
+  fill: var(--text-color);
+  stroke: none;
+}
+.mermaid .loopText {
+  fill: var(--text-color);
+  stroke: none;
+}
+.mermaid .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: var(--text-color);
+}
+.mermaid .note {
+  stroke: var(--grey-4);
+  fill: var(--grey-3);
+}
+.mermaid .noteText {
+  fill: #000;
+  stroke: none;
+  font-family: var(--mermaid-font-family);
+  font-size: 0.875rem;
+}
+.mermaid .activation0 {
+  fill: #f4f4f4;
+  stroke: #666;
+}
+.mermaid .activation1 {
+  fill: #f4f4f4;
+  stroke: #666;
+}
+.mermaid .activation2 {
+  fill: #f4f4f4;
+  stroke: #666;
+}
+.mermaid .mermaid-main-font {
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .section {
+  stroke: none;
+  opacity: 0.2;
+}
+.mermaid .section0 {
+  fill: var(--grey-1);
+}
+.mermaid .section2 {
+  fill: var(--grey-1);
+}
+.mermaid .section1,
+.mermaid .section3 {
+  fill: var(--grey-0);
+  opacity: 0.2;
+}
+.mermaid .sectionTitle0 {
+  fill: var(--text-color);
+}
+.mermaid .sectionTitle1 {
+  fill: var(--text-color);
+}
+.mermaid .sectionTitle2 {
+  fill: var(--text-color);
+}
+.mermaid .sectionTitle3 {
+  fill: var(--text-color);
+}
+.mermaid .sectionTitle {
+  text-anchor: start;
+  font-size: 0.6875rem;
+  text-height: 0.875rem;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .grid .tick {
+  stroke: var(--text-color);
+  opacity: 0.8;
+  shape-rendering: crispEdges;
+}
+.mermaid .grid .tick text {
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .grid path {
+  stroke-width: 0;
+}
+.mermaid .today {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-width: 0.125rem;
+}
+.mermaid .task {
+  stroke-width: 2;
+}
+.mermaid .taskText {
+  text-anchor: middle;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .taskText:not([font-size]) {
+  font-size: 0.6875rem;
+}
+.mermaid .taskTextOutsideRight {
+  fill: var(--text-color);
+  text-anchor: start;
+  font-size: 0.6875rem;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .taskTextOutsideLeft {
+  fill: var(--text-color);
+  text-anchor: end;
+  font-size: 0.6875rem;
+}
+.mermaid .task.clickable {
+  cursor: pointer;
+}
+.mermaid .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold;
+}
+.mermaid .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold;
+}
+.mermaid .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold;
+}
+.mermaid .taskText0,
+.mermaid .taskText1,
+.mermaid .taskText2,
+.mermaid .taskText3 {
+  fill: var(--grey-1);
+}
+.mermaid .task0,
+.mermaid .task1,
+.mermaid .task2,
+.mermaid .task3 {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
+.mermaid .taskTextOutside0,
+.mermaid .taskTextOutside2 {
+  fill: var(--color-blue);
+}
+.mermaid .taskTextOutside1,
+.mermaid .taskTextOutside3 {
+  fill: var(--color-purple);
+}
+.mermaid .active0,
+.mermaid .active1,
+.mermaid .active2,
+.mermaid .active3 {
+  fill: var(--grey-1);
+  stroke: var(--text-color);
+}
+.mermaid .activeText0,
+.mermaid .activeText1,
+.mermaid .activeText2,
+.mermaid .activeText3 {
+  fill: var(--text-color) !important;
+}
+.mermaid .done0,
+.mermaid .done1,
+.mermaid .done2,
+.mermaid .done3 {
+  stroke: var(--color-green);
+  fill: var(--grey-1);
+  stroke-width: 2;
+}
+.mermaid .doneText0,
+.mermaid .doneText1,
+.mermaid .doneText2,
+.mermaid .doneText3 {
+  fill: var(--text-color) !important;
+}
+.mermaid .crit0,
+.mermaid .crit1,
+.mermaid .crit2,
+.mermaid .crit3 {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
+  stroke-width: 2;
+}
+.mermaid .activeCrit0,
+.mermaid .activeCrit1,
+.mermaid .activeCrit2,
+.mermaid .activeCrit3 {
+  stroke: var(--primary-color);
+  fill: var(--grey-1);
+  stroke-width: 2;
+}
+.mermaid .doneCrit0,
+.mermaid .doneCrit1,
+.mermaid .doneCrit2,
+.mermaid .doneCrit3 {
+  stroke: var(--text-color);
+  fill: var(--text-color);
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges;
+}
+.mermaid .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8);
+}
+.mermaid .milestoneText {
+  font-style: italic;
+}
+.mermaid .doneCritText0,
+.mermaid .doneCritText1,
+.mermaid .doneCritText2,
+.mermaid .doneCritText3 {
+  fill: var(--color-green) !important;
+}
+.mermaid .activeCritText0,
+.mermaid .activeCritText1,
+.mermaid .activeCritText2,
+.mermaid .activeCritText3 {
+  fill: var(--text-color) !important;
+}
+.mermaid .titleText {
+  text-anchor: middle;
+  font-size: 1.125rem;
+  fill: var(--text-color);
+  font-family: var(--mermaid-font-family);
+}
+.mermaid g.classGroup text {
+  fill: var(--text-color);
+  stroke: none;
+  font-family: var(--mermaid-font-family);
+  font-size: 0.625rem;
+}
+.mermaid g.classGroup text .title {
+  font-weight: bolder;
+}
+.mermaid g.clickable {
+  cursor: pointer;
+}
+.mermaid g.classGroup rect {
+  fill: var(--grey-1);
+  stroke: var(--text-color);
+}
+.mermaid g.classGroup line {
+  stroke: var(--text-color);
+  stroke-width: 1;
+}
+.mermaid .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: var(--grey-1);
+  opacity: 0.5;
+}
+.mermaid .classLabel .label {
+  fill: var(--text-color);
+  font-size: 0.625rem;
+}
+.mermaid .relation {
+  stroke: var(--text-color);
+  stroke-width: 1;
+  fill: none;
+}
+.mermaid .dashed-line {
+  stroke-dasharray: 3;
+}
+@mixin composition {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+  stroke-width: 1;
+}
+@include composition;
+@include composition;
+@mixin aggregation {
+  fill: var(--grey-1);
+  stroke: var(--text-color);
+  stroke-width: 1;
+}
+@include aggregation;
+@include aggregation;
+@include composition;
+@include composition;
+@include composition;
+@include composition;
+.mermaid .commit-id,
+.mermaid .commit-msg,
+.mermaid .branch-label {
+  fill: #d3d3d3;
+  color: #d3d3d3;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .pieTitleText {
+  text-anchor: middle;
+  font-size: 1.5625rem;
+  fill: $taskTextDarkColor;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .slice {
+  font-family: var(--mermaid-font-family);
+}
+.mermaid g.stateGroup text {
+  fill: var(--text-color);
+  stroke: none;
+  font-size: 0.625rem;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid g.stateGroup text {
+  fill: var(--text-color);
+  stroke: none;
+  font-size: 0.625rem;
+}
+.mermaid g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: #000;
+}
+.mermaid g.stateGroup rect {
+  fill: var(--grey-1);
+  stroke: var(--text-color);
+}
+.mermaid g.stateGroup line {
+  stroke: var(--text-color);
+  stroke-width: 1;
+}
+.mermaid .transition {
+  stroke: var(--text-color);
+  stroke-width: 1;
+  fill: none;
+}
+.mermaid .stateGroup .composit {
+  fill: #fff;
+  border-bottom: 0.0625rem;
+}
+.mermaid .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 0.0625rem;
+}
+.mermaid .state-note {
+  stroke: var(--grey-4);
+  fill: var(--grey-3);
+}
+.mermaid .state-note text {
+  fill: #000;
+  stroke: none;
+  font-size: 0.625rem;
+}
+.mermaid .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: var(--grey-1);
+  opacity: 0.5;
+}
+.mermaid .stateLabel text {
+  fill: #000;
+  font-size: 0.625rem;
+  font-weight: bold;
+  font-family: var(--mermaid-font-family);
+}
+.mermaid .node circle.state-start {
+  fill: #000;
+  stroke: #000;
+}
+.mermaid .node circle.state-end {
+  fill: #000;
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+.mermaid #statediagram-barbEnd {
+  fill: var(--text-color);
+}
+.mermaid .statediagram-cluster rect {
+  fill: var(--grey-1);
+  stroke: var(--text-color);
+  stroke-width: 0.0625rem;
+}
+.mermaid .statediagram-cluster rect.outer {
+  rx: 0.3125rem;
+  ry: 0.3125rem;
+}
+.mermaid .statediagram-state .divider {
+  stroke: var(--text-color);
+}
+.mermaid .statediagram-state .title-state {
+  rx: 0.3125rem;
+  ry: 0.3125rem;
+}
+.mermaid .statediagram-cluster.statediagram-cluster .inner {
+  fill: #fff;
+}
+.mermaid .statediagram-cluster.statediagram-cluster-alt .inner {
+  fill: #e0e0e0;
+}
+.mermaid .statediagram-cluster .inner {
+  rx: 0;
+  ry: 0;
+}
+.mermaid .statediagram-state rect.basic {
+  rx: 0.3125rem;
+  ry: 0.3125rem;
+}
+.mermaid .statediagram-state rect.divider {
+  stroke-dasharray: 10, 10;
+  fill: #efefef;
+}
+.mermaid .note-edge {
+  stroke-dasharray: 5;
+}
+.mermaid .statediagram-note rect {
+  stroke: var(--grey-4);
+  fill: var(--grey-3);
+  stroke-width: 0.0625rem;
+  rx: 0;
+  ry: 0;
+}
+:root {
+  --mermaid-font-family: "trebuchet ms", verdana, arial;
+}
+</div><footer><div class="meta"></div><div class="reward"><button><i class="ic i-heartbeat"></i>Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/assets/wechatpay.png" alt="KuChen WeChat Pay"/><p>WeChat Pay</p></div><div><img data-src="/assets/alipay.png" alt="KuChen Alipay"/><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>KuChen<i class="ic i-at"><em>@</em></i>KuChen</li><li class="link"><strong>Post link: </strong><a href="https://3569372265.github.io/css/mermaid/" title="">https://3569372265.github.io/css/mermaid/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/css/optimize/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="Untitled"><span class="type">Previous Post</span><h3>Untitled</h3></a></div><div class="item right"><a href="/css/comment/" rel="next" itemprop="url" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit4jrvuj20zk0m8785.jpg" title="Untitled"><span class="type">Next Post</span><h3>Untitled</h3></a></div></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"></div><div class="related panel pjax" data-title="Related"></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="KuChen" data-src="/assets/avatar.jpg"/><p class="name" itemprop="name">KuChen</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">6</span><span class="name">posts</span></a></div></nav><div class="social"><a href="https://github.com/name" class="item github" rel="noopener" title="https:&#x2F;&#x2F;github.com&#x2F;name" target="_blank"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-user"></i>About</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>About This Site</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>Appreciation</a></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>Friends</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/css/comment/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/css/optimize/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/css/app/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/css/twikoo/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/css/mermaid/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/hello-template/">Hexo Template</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/css/optimize/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/css/comment/">Untitled</a></span></li></ul></div><div class="rpost pjax"><h2>Recent Comments</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2023</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">KuChen @ testName</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">42k words</span><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">38 mins.</span></div><div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & Theme.<a href="https://github.com/theme-shoka-x/hexo-theme-shokaX/" rel="noopener" target="_blank">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+        path: `css/mermaid/`,
+        favicon: {
+        show: `不负韶华`,
+        hide: `以梦为马！`
+    },
+    search: {
+        placeholder: "Search for Posts",
+        empty: "We didn't find any results for the search: ${query}",
+        stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,
+    chart: false,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>`,
+    quiz: {
+        choice: `Multiple Choice`,
+        multiple: `Multiple Answer`,
+        true_false: `True/False`,
+        essay: `Questions`,
+        gap_fill: `Gap Filling`,
+        mistake: `Wrong Answer`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="https://polyfill.io/v3/polyfill.min.js?features=default,fetch"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.0.2/pace.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/instantsearch.js/4.39.0/instantsearch.production.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/quicklink/2.2.0/quicklink.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/??jquery/3.5.1/jquery.min.js,fancybox/3.5.7/jquery.fancybox.min.js,justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" async></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/KaTeX/0.15.2/contrib/copy-tex.min.js" async></script><script src="/js/app.js?v=0.3.6"></script></body></html>
