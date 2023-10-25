@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://3569372265.GitHub.io</id>
+    <title>KuChen</title>
+    <link href="https://3569372265.GitHub.io" />
+    <updated>2023-10-25T12:57:00.701Z</updated>
+    <entry>
+        <id>https://3569372265.github.io/hello-template/</id>
+        <title>Hexo Template</title>
+        <link rel="alternate" href="https://3569372265.github.io/hello-template/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;A fast, simple &amp;amp; powerful blog framework, powered by &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3Jn&#34;&gt;Node.js&lt;/span&gt;. Here is the template of it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tbWRqaWppLmdpdGh1Yi5pby9oZXhvLXRlbXBsYXRl&#34;&gt;Demo&lt;/span&gt; | &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlv&#34;&gt;Official Website&lt;/span&gt; | &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;Documentation&lt;/span&gt; | &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL21tZGppamkvaGV4by10ZW1wbGF0ZQ==&#34;&gt;GitHub&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;cicd&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cicd&#34;&gt;#&lt;/a&gt; CI/CD&lt;/h2&gt;
+&lt;p&gt;This repository uses GitHub Actions for CI/CD. You don’t need to build your documents manually. Just commit your documents (then run  &lt;code&gt;git push&lt;/code&gt; ), and then turn on the GitHub Pages in the settings to access your online documents. (For this demo is &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tbWRqaWppLmdpdGh1Yi5pby9oZXhvLXRlbXBsYXRl&#34;&gt;https://mmdjiji.github.io/hexo-template&lt;/span&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;attention&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#attention&#34;&gt;#&lt;/a&gt; !!! Attention !!!&lt;/h2&gt;
+&lt;p&gt;There are two lines to modify in  &lt;code&gt;_config.yml&lt;/code&gt; :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;(At line 16) Set your site url here. For example, if you use GitHub Page, set url as  &lt;code&gt;https://username.github.io/project&lt;/code&gt; :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;url:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://jiji.pro/hexo-template&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;(At line 107) Set your project name here, if your project name is  &lt;code&gt;username&lt;/code&gt;  or  &lt;code&gt;username.github.io&lt;/code&gt; , just remove it at the end of  &lt;code&gt;_config.yml&lt;/code&gt; :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;root:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/hexo-template&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;If you would not like to do so, it cannot work correctly.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hexo-features&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-features&#34;&gt;#&lt;/a&gt; Hexo Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Blazing fast generating&lt;/li&gt;
+&lt;li&gt;Support for GitHub Flavored Markdown and most Octopress plugins&lt;/li&gt;
+&lt;li&gt;One-command deploy to GitHub Pages, Heroku, etc.&lt;/li&gt;
+&lt;li&gt;Powerful API for limitless extensibility&lt;/li&gt;
+&lt;li&gt;Hundreds of &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;themes&lt;/span&gt; &amp;amp; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3BsdWdpbnMv&#34;&gt;plugins&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;commands&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#commands&#34;&gt;#&lt;/a&gt; Commands&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Install Hexo&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Install with &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9icmV3LnNoLw==&#34;&gt;brew&lt;/span&gt; on macOS and Linux:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ brew install hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Setup your blog&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo init blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; blog&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Start the server&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Create a new post&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;Hello Hexo&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Generate static files&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;more-information&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#more-information&#34;&gt;#&lt;/a&gt; More Information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Read the &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;documentation&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Visit the &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9hd2Vzb21lLWhleG8=&#34;&gt;Awesome Hexo&lt;/span&gt; list&lt;/li&gt;
+&lt;li&gt;Find solutions in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Join discussion on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ncm91cHMuZ29vZ2xlLmNvbS9ncm91cC9oZXhv&#34;&gt;Google Group&lt;/span&gt;, &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kaXNjb3JkLmdnL3RlTTJBbmo=&#34;&gt;Discord&lt;/span&gt;, &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXR0ZXIuaW0vaGV4b2pzL2hleG8=&#34;&gt;Gitter&lt;/span&gt; or &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90Lm1lL2hleG9qcw==&#34;&gt;Telegram&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;See the &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3BsdWdpbnMv&#34;&gt;plugin list&lt;/span&gt; and the &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;theme list&lt;/span&gt; on wiki&lt;/li&gt;
+&lt;li&gt;Follow &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90d2l0dGVyLmNvbS9oZXhvanM=&#34;&gt;@hexojs&lt;/span&gt; for latest news&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;license&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#license&#34;&gt;#&lt;/a&gt; License&lt;/h2&gt;
+&lt;p&gt;Follows &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhv&#34;&gt;hexojs/hexo&lt;/span&gt; , use &lt;a href=&#34;LICENSE&#34;&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app.fossa.com/projects/git%2Bgithub.com%2Fhexojs%2Fhexo?ref=badge_large&#34;&gt;&lt;img data-src=&#34;https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhexojs%2Fhexo.svg?type=large&#34; alt=&#34;FOSSA Status&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+        <updated>2023-10-25T12:57:00.701Z</updated>
+    </entry>
+</feed>
